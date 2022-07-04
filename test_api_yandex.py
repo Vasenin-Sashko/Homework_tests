@@ -13,7 +13,7 @@ class TestYaApi(unittest.TestCase):
     # метод: тестирование неправильной аунтефикации на яндекс диске (отсутсвие токена)
     @unittest.expectedFailure
     def test_create_folder_fail(self):
-        self.assertEqual(yandex_service.create_folder('test_passed'), 401)
+        self.assertEqual(yandex_service.create_folder('test_folder'), 401)
 
     def tearDown(self):
         print('method tearDown')

@@ -11,6 +11,7 @@ def get_headers():
         'Authorization': 'OAuth {}'.format(token)
     }
 
+ # метод  создания папки на яндекс диске
 def create_folder(folder_name):
     headers = get_headers()
     params = {"path": folder_name}
